@@ -12,7 +12,7 @@ export default function RecommendedTourCard({ tour }: RecommendedTourCardProps) 
   const tourContent = tour.content
   return (
     <div className="bg-white rounded-md shadow">
-      <Image className="aspect-video object-cover w-full origin-center" src={tourContent.main_image.filename!} alt={`${tour.content.main_image.alt}`} width={1920} height={1080} />
+      <Image className="aspect-video object-cover w-full origin-center" src={tourContent.main_image.filename} alt={`${tour.content.main_image.alt}`} width={1920} height={1080} />
       <div className="p-8">
         <div className="flex gap-4 justify-between text-lg font-bold">
           <h3>

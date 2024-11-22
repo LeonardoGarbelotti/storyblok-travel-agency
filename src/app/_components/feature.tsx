@@ -1,4 +1,5 @@
 import { FeatureStoryblok } from "@/app/types/component-types-sb";
+import { storyblokEditable } from "@storyblok/react/rsc";
 
 interface FeatureProps {
   blok: FeatureStoryblok
@@ -6,7 +7,7 @@ interface FeatureProps {
 
 export default function Feature({ blok }: FeatureProps) {
   return (
-    <div className="bg-white p-8 rounded-md shadow">
+    <div {...storyblokEditable(blok)} className="bg-white p-8 rounded-md shadow">
       <h3 className="font-bold text-3xl">
         {blok.headline}
       </h3>
